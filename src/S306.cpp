@@ -7,16 +7,10 @@ class Solution {
     bool isAdditiveNumber(string num) {
         int n = num.size();
         for (int secondStart = 1; secondStart < n - 1; ++secondStart) {
-            if (num[0] == '0' && secondStart != 1) {
-                break;
-            }
+            if (num[0] == '0' && secondStart != 1) break;
             for (int secondEnd = secondStart; secondEnd < n - 1; ++secondEnd) {
-                if (num[secondStart] == '0' && secondStart != secondEnd) {
-                    break;
-                }
-                if (valid(secondStart, secondEnd, num)) {
-                    return true;
-                }
+                if (num[secondStart] == '0' && secondStart != secondEnd) break;
+                if (valid(secondStart, secondEnd, num)) return true;
             }
         }
         return false;
@@ -31,12 +25,11 @@ class Solution {
             int thirdStart = secondEnd + 1;
             int thirdEnd = secondEnd + third.size();
             if (thirdEnd >= n ||
-                !(num.substr(thirdStart, thirdEnd - thirdStart + 1) == third)) {
+                !(num.substr(thirdStart, thirdEnd - thirdStart + 1) == third))
                 break;
-            }
-            if (thirdEnd == n - 1) {
-                return true;
-            }
+
+            if (thirdEnd == n - 1) return true;
+
             firstStart = secondStart;
             firstEnd = secondEnd;
             secondStart = thirdStart;
