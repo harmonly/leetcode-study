@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
-    cout << "Hello LeetCode!" << endl;
+    string words = "23:59";
+    cout << words.substr(3,2) << endl;
     return 0;
 }
