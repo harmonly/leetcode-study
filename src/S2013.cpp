@@ -3,24 +3,30 @@
 using namespace std;
 
 class DetectSquares {
-   private:
-    map<pair<int, int>, int> mp;
-
    public:
     DetectSquares() {}
 
-    void add(vector<int> point) { mp[{point[0], point[1]}]++; }
+    void add(vector<int> point) { g[{point[0], point[1]}]++; }
 
     int count(vector<int> point) {
-        int res = 0;
+        int ans = 0;
         int x = point[0], y = point[1];
-        for (const auto& [pnt, cnt] : mp) {
-            auto& [a, b] = pnt;
-            // 防止横纵坐标相同
-            if (a == x || b == y) continue;
-            // 正方形判断
-            if (abs(a - x) == abs(b - y)) res += mp[{a, y}] * mp[{x, b}] * cnt;
+        for (auto& coor : g) {
+            int dx = coor.first.first, dy = coor.first.second;
+            int cnt = coor.second;
+            if (dx != x && dy != y && abs(x - dx) == abs(y - dy))
+                ans += g[{dx, y}] * g[{x, dy}] * cnt;
         }
-        return res;
+        return ans;
     }
+
+   private:
+    map<pair<int, int>, int> g;
 };
+
+/**
+ * Your DetectSquares object will be instantiated and called as such:
+ * DetectSquares* obj = new DetectSquares();
+ * obj->add(point);
+ * int param_2 = obj->count(point);
+ */
