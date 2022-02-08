@@ -28,7 +28,7 @@ class Solution {
         grid[x][y] = '2';
         int m = grid.size(), n = grid[0].size();
         for (int d = 0; d < 4; ++d) {
-            int nx = x + dirs[d][0], ny = y = dirs[d][1];
+            int nx = x + dirs[d][0], ny = y + dirs[d][1];
             if (nx < 0 || nx >= m || ny < 0 || ny >= n) continue;
             if (grid[nx][ny] == '1') dfs(grid, nx, ny);
         }
@@ -36,7 +36,10 @@ class Solution {
 };
 
 int main() {
-    vector<vector<char>> grid;
+    vector<vector<char>> grid = {{'1', '1', '1', '1', '0'},
+                                 {'1', '1', '0', '1', '0'},
+                                 {'1', '1', '0', '0', '0'},
+                                 {'0', '0', '0', '0', '0'}};
     cout << Solution().numIslands(grid) << endl;
     return 0;
 }
