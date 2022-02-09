@@ -21,6 +21,14 @@ class Solution {
                isSubtree(root->right, subRoot);
     }
 
+    /**
+     * @brief judge root == subRoot
+     *
+     * @param root
+     * @param subRoot
+     * @return true (root == subRoot)
+     * @return false (root != subRoot)
+     */
     bool dfs(TreeNode* root, TreeNode* subRoot) {
         if (!root && !subRoot) return true;
         return root && subRoot && root->val == subRoot->val &&
