@@ -2,38 +2,26 @@
 
 using namespace std;
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+
 class Solution {
    public:
-    struct ListNode {
-        int val;
-        ListNode *next;
-        ListNode() : val(0), next(nullptr) {}
-        ListNode(int x) : val(x), next(nullptr) {}
-        ListNode(int x, ListNode *next) : val(x), next(next) {}
-    };
-
     ListNode *removeNthFromEnd(ListNode *head, int n) {
-        ListNode *dummy = new ListNode(0, head);
-        ListNode *first = head;
-        ListNode *second = dummy;
-        for (int i = 0; i < n; i++) first = first->next;
-        while (first) {
-            first = first->next;
-            second = second->next;
+        ListNode dummy(-1, head);
+        ListNode *fast = head;
+        ListNode *slow = &dummy;
+        while (n--) fast = fast->next;
+        while (fast) {
+            fast = fast->next;
+            slow = slow->next;
         }
-        second->next = second->next->next;
-        ListNode *ans = dummy->next;
-        delete dummy;
-        return ans;
+        slow->next = slow->next->next;
+        return dummy.next;
     }
 };
