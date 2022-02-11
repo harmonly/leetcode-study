@@ -12,11 +12,9 @@ using namespace std;
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-class Solution
-{
-public:
-    struct ListNode
-    {
+class Solution {
+   public:
+    struct ListNode {
         int val;
         ListNode *next;
         ListNode() : val(0), next(nullptr) {}
@@ -24,15 +22,12 @@ public:
         ListNode(int x, ListNode *next) : val(x), next(next) {}
     };
 
-    ListNode *removeNthFromEnd(ListNode *head, int n)
-    {
+    ListNode *removeNthFromEnd(ListNode *head, int n) {
         ListNode *dummy = new ListNode(0, head);
         ListNode *first = head;
         ListNode *second = dummy;
-        for (int i = 0; i < n; i++)
-            first = first->next;
-        while (first)
-        {
+        for (int i = 0; i < n; i++) first = first->next;
+        while (first) {
             first = first->next;
             second = second->next;
         }
