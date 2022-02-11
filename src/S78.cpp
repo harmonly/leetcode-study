@@ -12,11 +12,10 @@ class Solution {
         return ans;
     }
 
-    vector<vector<int>> subsets(vector<int>& nums) {
-        vector<vector<int>> ans;
+    vector<vector<int>> subsets2(vector<int>& nums) {
         int n = nums.size();
         for (int mask = 0; mask < (1 << n); ++mask) {
-            vector<int> path;
+            path.clear();
             for (int i = 0; i < n; ++i) {
                 if (mask & (1 << i)) path.push_back(nums[i]);
             }
