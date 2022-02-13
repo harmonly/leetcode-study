@@ -22,7 +22,7 @@ class Solution {
         } else if (target < 0)
             return;
         for (int i = idx; i < n; ++i) {
-            if (i > idx && nums[i] == nums[i - 1]) continue;
+            if (i > idx && nums[i] == nums[i - 1]) continue;  // 去重
             path.emplace_back(nums[i]);
             backtrack(nums, i + 1, target - nums[i]);
             path.pop_back();
