@@ -17,4 +17,15 @@ class Solution {
         }
         return ans;
     }
+
+    int jump2(vector<int>& nums) {
+        int n = nums.size();
+        int dp[n];
+        dp[0] = 0;
+        for (int i = 1, j = 0; i < n; ++i) {
+            while (j + nums[j] < i) ++j;
+            dp[i] = dp[j] + 1;
+        }
+        return dp[n - 1];
+    }
 };
