@@ -18,9 +18,13 @@ class Solution {
         int l =
             dfs(s.substr(0, pos),
                 k);  // 存在数量小于k的字符, 该字符的位置为pos, 对左半区域分治
-        while (pos < n && freq[s[pos] - 'a'] < k)
-            ++pos;                      // 找到下一个数量小于k的字符
+        while (pos < n && freq[s[pos] - 'a'] < k) ++pos;  // 跳过数量小于k的字符
         int r = dfs(s.substr(pos), k);  // 对右半区域分治
         return max(l, r);  // 返回左半或右半区域的最长重复字符的长度
     }
 };
+
+int main() {
+    string s = "aaacbbbbbbcaaa";
+    cout << Solution().longestSubstring(s, 3) << endl;
+}
