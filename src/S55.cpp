@@ -14,4 +14,17 @@ class Solution {
         }
         return false;
     }
+
+    bool canJump2(vector<int>& nums) {
+        int n = nums.size();
+        int next = 0;
+        for (int i = 0; i < n; ++i) {
+            next = max(next, i + nums[i]);
+            if (next >= n - 1)
+                return true;
+            else if (next == i)
+                return false;
+        }
+        return false;
+    }
 };
