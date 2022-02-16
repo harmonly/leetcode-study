@@ -11,7 +11,7 @@ class Solution {
         for (int i = 0; i < nums.size() - 1; ++i) {
             maxPos = max(maxPos, i + nums[i]);
             if (i == end) {  // 到达上次跳跃能到达的右边界了
-                end = maxPos;  // 目前能跳到的最远位置变成了下次起跳位置的有边界
+                end = maxPos;  // 目前能跳到的最远位置变成了下次起跳位置的右边界
                 ans++;  // 进入下一次跳跃
             }
         }
