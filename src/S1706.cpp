@@ -3,11 +3,10 @@
 using namespace std;
 
 class Solution {
-    vector<int> ans;
-
    public:
     vector<int> findBall(vector<vector<int>>& grid) {
-        for (int j = 0; j < grid[0].size(); ++j) dfs(grid, 0, j);
+        vector<int> ans;
+        for (int j = 0; j < grid[0].size(); ++j) dfs(grid, ans, 0, j);
         return ans;
     }
 
@@ -30,7 +29,7 @@ class Solution {
         return ans;
     }
 
-    void dfs(vector<vector<int>>& grid, int i, int j) {
+    void dfs(vector<vector<int>>& grid, vector<int>& ans, int i, int j) {
         int m = grid.size(), n = grid[0].size();
         if (i == m) {
             ans.push_back(j);
@@ -49,7 +48,7 @@ class Solution {
             ans.push_back(-1);
             return;
         }
-        dfs(grid, i + 1, j + cur);
+        dfs(grid, ans, i + 1, j + cur);
     }
 };
 
