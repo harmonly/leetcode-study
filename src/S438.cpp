@@ -30,42 +30,21 @@ class Solution {
     }
 
     vector<int> findAnagrams2(string s, string p) {
-        int sLen = s.size(), pLen = p.size();
-        if (sLen < pLen) return vector<int>();
-
+        int m = s.length(), n = p.length();
+        int cnt[26], diff = 0;
         vector<int> ans;
-        vector<int> cnt(26, 0);
-        int diff = 0;
-
-        for (int i = 0; i < pLen; i++) {
-            cnt[p[i] - 'a']--;
-            cnt[s[i] - 'a']++;
-        }
-
-        for (int i = 0; i < 26; i++) {
-            if (cnt[i] != 0) {
-                diff++;
-            }
-        }
-
+        if (n > m) return ans;
+        memset(cnt, 0, sizeof(cnt));
+        for (int i = 0; i < n; ++i) cnt[s[i] - 'a']++, cnt[p[i] - 'a']--;
+        for (int i = 0; i < 26; ++i) diff += cnt[i] != 0;
         if (diff == 0) ans.emplace_back(0);
-
-        for (int i = 0; i < sLen - pLen; i++) {
-            if (--cnt[s[i] - 'a'] == 0) {
-                diff--;
-            } else if (cnt[s[i] - 'a'] == -1) {
-                diff++;
-            }
-
-            if (++cnt[s[i + pLen] - 'a'] == 0) {
-                diff--;
-            } else if (cnt[s[i + pLen] - 'a'] == 1) {
-                diff++;
-            }
-
-            if (diff == 0) ans.emplace_back(i + 1);
+        for (int i = n; i < m; ++i) {
+            diff += -(cnt[s[i - n] - 'a'] == 1) + (cnt[s[i - n] - 'a'] == 0);
+            --cnt[s[i - n] - 'a'];
+            diff += -(cnt[s[i] - 'a'] == -1) + (cnt[s[i] - 'a'] == 0);
+            ++cnt[s[i] - 'a'];
+            if (diff == 0) ans.emplace_back(i - n + 1);
         }
-
         return ans;
     }
 };
