@@ -14,13 +14,11 @@ struct TreeNode {
 
 class Solution {
    private:
-    int rootSum(TreeNode *root, int targetSum) {
+    int count(TreeNode *root, int sum) {
         if (!root) return 0;
-        int res = 0;
-        if (root->val == targetSum) res++;
-        res += rootSum(root->left, targetSum - root->val);
-        res += rootSum(root->right, targetSum - root->val);
-        return res;
+        int val = root->val;
+        return (val == sum) + count(root->left, sum - val) +
+               count(root->right, sum - val);
     }
 
     using LL = long long;
@@ -42,12 +40,10 @@ class Solution {
     }
 
    public:
-    int pathSum(TreeNode *root, int targetSum) {
+    int pathSum(TreeNode *root, int sum) {
         if (!root) return 0;
-        int res = rootSum(root, targetSum);
-        res += pathSum(root->left, targetSum);
-        res += pathSum(root->right, targetSum);
-        return res;
+        return count(root, sum) + pathSum(root->left, sum) +
+               pathSum(root->right, sum);
     }
 
     int pathSum2(TreeNode *root, int targetSum) {
