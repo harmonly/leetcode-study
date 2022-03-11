@@ -25,9 +25,8 @@ class Solution {
             score *= sz;  // 分数值 * 子节点 c 及其所有子节点的个数
             size += sz;  // size 保存 子节点 c 及其所有子节点的个数
         }
-        if (n - size != 0)
-            score *=
-                n - size;  // 如果其他位置有节点则 * 其他节点的数量(n - size)
+        if (n - size != 0)      // 如果其他位置有节点
+            score *= n - size;  // score * 其他节点的数量(n - size)
         if (score == maxScore)
             ++cnt;
         else if (score > maxScore) {
