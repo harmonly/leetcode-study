@@ -35,14 +35,14 @@ class Solution2 {
     string frequencySort(string s) {
         unordered_map<char, int> mp;
         int maxFreq = 0, n = s.length();
-        for (auto &c : s) maxFreq = max(maxFreq, ++mp[c]);
+        for (auto &ch : s) maxFreq = max(maxFreq, ++mp[ch]);
         vector<string> buckets(maxFreq + 1);
         for (auto &it : mp) buckets[it.second].push_back(it.first);
         string ans;
         for (int i = maxFreq; i > 0; --i) {
             string &bucket = buckets[i];
-            for (auto &c : bucket)
-                for (int k = 0; k < i; ++k) ans.push_back(c);
+            for (auto &ch : bucket)
+                for (int k = 0; k < i; ++k) ans.push_back(ch);
         }
         return ans;
     }
