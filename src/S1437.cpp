@@ -5,18 +5,12 @@ using namespace std;
 class Solution {
    public:
     bool kLengthApart(vector<int>& nums, int k) {
-        int n = nums.size(), pre = -1;
-        for (int i = 0; i < n; ++i)
-            if (nums[i]) {
-                pre = i;
-                break;
+        int n = nums.size(), prev = -1;
+        for (int i = 0; i < n; ++i) {
+            if (nums[i] == 1) {
+                if (prev != -1 && i - prev - 1 < k) return false;
+                prev = i;
             }
-        for (int i = pre + 1; i < n; ++i) {
-            if (!nums[i]) continue;
-            if (i - pre - 1 >= k)
-                pre = i;
-            else
-                return false;
         }
         return true;
     }
