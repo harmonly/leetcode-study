@@ -45,9 +45,9 @@ class AllOne {
                 pre->first.emplace(key);
                 nodes[key] = pre;
             }
-            cur->first.erase(key);
-            if (cur->first.empty()) lst.erase(cur);
         }
+        cur->first.erase(key);
+        if (cur->first.empty()) lst.erase(cur);
     }
 
     string getMaxKey() {
