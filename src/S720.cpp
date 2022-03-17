@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 
-#include "trie.cpp"
-
 using namespace std;
 
 class Solution {
@@ -42,8 +40,36 @@ class Solution2 {
     }
 };
 
-int main() {
-    vector<string> words{"w", "wo", "wor", "worl", "world"};
-    cout << Solution2().longestWord(words) << endl;
-    return 0;
-}
+
+class Trie {
+   public:
+    Trie() : children(26), isEnd(false) {}
+
+    bool insert(string& word) {
+        Trie* node = this;
+        for (auto& ch : word) {
+            int index = ch - 'a';
+            if (node->children[index] == nullptr)
+                node->children[index] = new Trie();
+            node = node->children[index];
+        }
+        node->isEnd = true;
+        return true;
+    }
+
+    bool search(string& word) {
+        Trie* node = this;
+        for (auto& ch : word) {
+            int index = ch - 'a';
+            if (node->children[index] == nullptr ||
+                !node->children[index]->isEnd)
+                return false;
+            node = node->children[index];
+        }
+        return node != nullptr && node->isEnd;
+    }
+
+   private:
+    vector<Trie*> children;
+    bool isEnd;
+};
