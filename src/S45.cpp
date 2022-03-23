@@ -29,3 +29,22 @@ class Solution {
         return dp[n - 1];
     }
 };
+
+class Solution2 {
+   public:
+    int jump(vector<int>& nums) {
+        int n = nums.size(), l = 0,
+            r = 0;  // 跳 i 步的左右区间 l, r, 最开始的区间为 [0, 0]
+        if (n == 1) return 0;
+        for (int i = 1;; ++i) {  // 枚举跳跃步数
+            int m = 0;           // 最远跳跃距离
+            // 枚举跳 i 步能到达的最大距离
+            for (int j = l; j <= r; ++j) m = max(m, nums[j] + j);
+            // 跳到 n - 1 则返回跳跃步数 i
+            if (m >= n - 1) return i;
+            l = r + 1;  // 左区间 = 右区间 + 1
+            r = m;      // 有区间 = 最远跳跃距离
+        }
+        return 0;
+    }
+};
