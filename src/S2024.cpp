@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// 本质是求 'T' 或 'F' 的数量 不大于 k 的窗口
 class Solution {
    public:
     int maxConsecutiveAnswers(string s, int k) {
