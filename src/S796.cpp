@@ -13,3 +13,11 @@ class Solution {
         return false;
     }
 };
+
+class Solution2 {
+   public:
+    bool rotateString(string s, string goal) {
+        return s.length() == goal.length() &&
+               (s + s).find(goal) != string::npos;
+    }
+};
