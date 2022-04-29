@@ -70,3 +70,29 @@ class Solution {
         return node;
     }
 };
+
+class Solution2 {
+   public:
+    Node* construct(vector<vector<int>>& grid) {
+        int n = grid.size();
+        vector<vector<int>> pre(n + 1, vector<int>(n + 1, 0));
+        for (int i = 1; i <= n; ++i)
+            for (int j = 1; j <= n; ++j)
+                pre[i][j] = pre[i - 1][j] + pre[i][j - 1] - pre[i - 1][j - 1] + grid[i - 1][j - 1];
+        auto getSum = [&](int x, int y, int size) {
+            return pre[x + size][y + size] - pre[x][y + size] - pre[x + size][y] + pre[x][y];
+        };
+        function<Node *(int, int, int)> dfs = [&](int x, int y, int size) {
+            int total = getSum(x, y, size);
+            if (total == 0) return new Node(false, true);
+            if (total == size * size) return new Node(true, true);
+            return new Node(true, false,
+                    dfs(x, y, size / 2),
+                    dfs(x, y + size / 2, size / 2),
+                    dfs(x + size / 2, y, size / 2),
+                    dfs(x + size / 2, y + size / 2, size / 2)
+            );
+        };
+        return dfs(0, 0, n);
+    }
+};
