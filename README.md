@@ -14,3 +14,8 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 ## 3. DFS
 
 [464. Can I Win](https://leetcode.cn/problems/can-i-win/)---[Solution](https://leetcode.cn/problems/can-i-win/solution/bo-yi-lun-by-harmonly-idcy/)---[Code](https://github.com/harmonly/leetcode-study/tree/main/src/S464.cpp)
+
+
+## 4. BFS
+
+[675. Cut Off Trees for Golf Event](https://leetcode.cn/problems/cut-off-trees-for-golf-event/)---[Solution](https://leetcode.cn/problems/cut-off-trees-for-golf-event/solution/bfs-by-harmonly-xrfi/)---[Code](https://github.com/harmonly/leetcode-study/tree/main/src/S675.cpp)
