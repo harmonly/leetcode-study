@@ -32,3 +32,9 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | problem | Solution | Code |
 | --- | --- | --- |
 |[467. Unique Substrings in Wraparound String](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/)|[link](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/solution/dp-by-harmonly-wa7c/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S467.cpp)|
+
+## 5. Brute Force
+
+| problem | Solution | Code |
+| --- | --- | --- |
+|[699. Falling Squares](https://leetcode.cn/problems/falling-squares/)|[link](https://leetcode.cn/problems/falling-squares/solution/by-harmonly-0g4v/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S699.cpp)|
