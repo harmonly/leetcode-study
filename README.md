@@ -38,3 +38,4 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | problem | Solution | Code |
 | --- | --- | --- |
 |[699. Falling Squares](https://leetcode.cn/problems/falling-squares/)|[link](https://leetcode.cn/problems/falling-squares/solution/by-harmonly-0g4v/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S699.cpp)|
+|[944. Delete Columns to Make Sorted](https://leetcode.cn/problems/delete-columns-to-make-sorted/)|[link](https://leetcode.cn/problems/delete-columns-to-make-sorted/solution/bao-li-by-harmonly-rphx/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S944.cpp)|
