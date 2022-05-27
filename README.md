@@ -42,7 +42,6 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 |[812. Largest Triangle Area](https://leetcode.cn/problems/largest-triangle-area/)|[link](https://leetcode.cn/problems/largest-triangle-area/solution/bao-li-by-harmonly-1rs4/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S812.cpp)|
 |[953. Verifying an Alien Dictionary](https://leetcode.cn/problems/verifying-an-alien-dictionary/)|[link](https://leetcode.cn/problems/verifying-an-alien-dictionary/solution/bao-li-by-harmonly-9w7y/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S953.cpp)|
 
-
 ## 7. Two Pointers
 | problem | Solution | Code |
 | --- | --- | --- |
