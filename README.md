@@ -13,6 +13,7 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | problem | Solution | Code |
 | --- | --- | --- |
 |[961. N-Repeated Element in Size 2N Array](https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/)|[link](https://leetcode.cn/problems/n-repeated-element-in-size-2n-array/solution/by-harmonly-irp2/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S961.cpp)|
+|[383. Ransom Note](https://leetcode.cn/problems/ransom-note/)|[link](https://leetcode.cn/problems/ransom-note/solution/ha-xi-biao-by-harmonly-nkh4/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S383.cpp)|
 
 ## 3. DFS
 
