@@ -32,6 +32,7 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | problem | Solution | Code |
 | --- | --- | --- |
 |[467. Unique Substrings in Wraparound String](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/)|[link](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/solution/dp-by-harmonly-wa7c/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S467.cpp)|
+|[691. Stickers to Spell Word](https://leetcode.cn/problems/stickers-to-spell-word/)|[link](https://leetcode.cn/problems/stickers-to-spell-word/solution/tie-zhi-pin-ci-by-leetcode-solution-9g3z/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S691.cpp)|
 
 ## 6. Brute Force
 
