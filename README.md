@@ -33,7 +33,7 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | --- | --- | --- |
 |[467. Unique Substrings in Wraparound String](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/)|[link](https://leetcode.cn/problems/unique-substrings-in-wraparound-string/solution/dp-by-harmonly-wa7c/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S467.cpp)|
 
-## 5. Brute Force
+## 6. Brute Force
 
 | problem | Solution | Code |
 | --- | --- | --- |
@@ -41,3 +41,9 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 |[944. Delete Columns to Make Sorted](https://leetcode.cn/problems/delete-columns-to-make-sorted/)|[link](https://leetcode.cn/problems/delete-columns-to-make-sorted/solution/bao-li-by-harmonly-rphx/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S944.cpp)|
 |[812. Largest Triangle Area](https://leetcode.cn/problems/largest-triangle-area/)|[link](https://leetcode.cn/problems/largest-triangle-area/solution/bao-li-by-harmonly-1rs4/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S812.cpp)|
 |[953. Verifying an Alien Dictionary](https://leetcode.cn/problems/verifying-an-alien-dictionary/)|[link](https://leetcode.cn/problems/verifying-an-alien-dictionary/solution/bao-li-by-harmonly-9w7y/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S953.cpp)|
+
+
+## 7. Two Pointers
+| problem | Solution | Code |
+| --- | --- | --- |
+|[面试题 17.11. Find Closest LCCI](https://leetcode.cn/problems/find-closest-lcci/)|[link](https://leetcode.cn/problems/find-closest-lcci/solution/by-harmonly-s4os/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/LCCI17-11.cpp)|
