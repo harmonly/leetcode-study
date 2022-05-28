@@ -48,3 +48,4 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | problem | Solution | Code |
 | --- | --- | --- |
 |[面试题 17.11. Find Closest LCCI](https://leetcode.cn/problems/find-closest-lcci/)|[link](https://leetcode.cn/problems/find-closest-lcci/solution/by-harmonly-s4os/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/LCCI17-11.cpp)|
+|[1021. Remove Outermost Parentheses](https://leetcode.cn/problems/remove-outermost-parentheses/)|[link](https://leetcode.cn/problems/remove-outermost-parentheses/solution/by-harmonly-lm1a/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S1021.cpp)|
