@@ -28,6 +28,7 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | problem | Solution | Code |
 | --- | --- | --- |
 |[675. Cut Off Trees for Golf Event](https://leetcode.cn/problems/cut-off-trees-for-golf-event/)|[link](https://leetcode.cn/problems/cut-off-trees-for-golf-event/solution/bfs-by-harmonly-xrfi/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S675.cpp)|
+|[1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.cn/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/)|[link](https://leetcode.cn/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/solution/shi-wang-ge-tu-zhi-shao-you-yi-tiao-you-xiao-lu-2/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S1368.cpp)|
 
 ## 5. DP
 
