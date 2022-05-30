@@ -21,6 +21,7 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | --- | --- | --- |
 |[464. Can I Win](https://leetcode.cn/problems/can-i-win/)|[link](https://leetcode.cn/problems/can-i-win/solution/bo-yi-lun-by-harmonly-idcy/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S464.cpp)|
 |[965. Univalued Binary Tree](https://leetcode.cn/problems/univalued-binary-tree/)|[link](https://leetcode.cn/problems/univalued-binary-tree/solution/jian-dan-by-harmonly-ii5i/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S965.cpp)|
+|[1022. Sum of Root To Leaf Binary Numbers](https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/)|[link](https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/solution/cong-gen-dao-xie-de-er-jin-zhi-shu-zhi-h-eqss/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S1022.cpp)|
 
 ## 4. BFS
 
