@@ -51,3 +51,8 @@ LeetCode Solutions: A Record of My Problem Solving Journey.
 | --- | --- | --- |
 |[面试题 17.11. Find Closest LCCI](https://leetcode.cn/problems/find-closest-lcci/)|[link](https://leetcode.cn/problems/find-closest-lcci/solution/by-harmonly-s4os/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/LCCI17-11.cpp)|
 |[1021. Remove Outermost Parentheses](https://leetcode.cn/problems/remove-outermost-parentheses/)|[link](https://leetcode.cn/problems/remove-outermost-parentheses/solution/by-harmonly-lm1a/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S1021.cpp)|
+
+## 8. Implementation
+| problem | Solution | Code |
+| --- | --- | --- |
+|[1108. Defanging an IP Address](https://leetcode.cn/problems/defanging-an-ip-address/)|[link](https://leetcode.cn/problems/defanging-an-ip-address/solution/mo-ni-by-harmonly-imlb/)|[link](https://github.com/harmonly/leetcode-study/tree/main/src/S1108.cpp)|
